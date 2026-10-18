@@ -49,50 +49,6 @@ console.log(sumToFormula(0)); // 0
 
 
 
-
-/*
-CHALLENGE 14: isPrime(n)
-
-Understand:
-  Input: an integer n.
-  Output: true if n is prime, otherwise false.
-
-Examples:
-  7 -> true
-  10 -> false
-  1 -> false
-
-Plan:
-  1. If n is less than 2, return false.
-  2. Check divisors starting from 2.
-  3. Stop at the square root of n.
-  4. If a divisor divides n exactly, return false.
-  5. Otherwise, return true.
-*/
-
-function isPrime(n) {
-    if (n < 2 || !Number.isInteger(n)) {
-        return false;
-    }
-
-    for (let i = 2; i <= Math.sqrt(n); i++) {
-        if (n % i === 0) {
-            return false;
-        }
-    }
-
-    return true;
-}
-
-console.log("\nCHALLENGE 14: PRIME NUMBER");
-console.log(isPrime(7));   // true
-console.log(isPrime(10));  // false
-console.log(isPrime(1));   // false
-
-
-
-
-
 /*
 CHALLENGE 14: isPrime(n)
 
